@@ -5,22 +5,29 @@
   
 
   
-  <title>git简单用法 | blogs</title>
+  <title>git简单用法 | 天朗映月Oo。.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1. git init在本目录下创建git仓库  2. git add添加文件到缓存  3. git commit -v提交更改文件并打开一个VIM编辑页面，确认无误后用i输入文本，按ESC退出后输入:wq保存更改并提交">
+  <meta name="description" content="1. git init在本目录下创建git仓库   2. git add新建一个test.txt文件添加文件到缓存   3. git commit -v 提交更改文件，此时会打开vim，若不输入文本提交的话会出错 在test.txt文件输入 1111111，再次执行git add test.txt –&amp;gt; git commit -v  确认无误后用i输入文本，按ESC退出，输入:wq保存更改并">
 <meta name="keywords" content="作业">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git简单用法">
 <meta property="og:url" content="http://leestonefly.github.io/Myblog/2018/12/17/git简单用法/index.html">
-<meta property="og:site_name" content="blogs">
-<meta property="og:description" content="1. git init在本目录下创建git仓库  2. git add添加文件到缓存  3. git commit -v提交更改文件并打开一个VIM编辑页面，确认无误后用i输入文本，按ESC退出后输入:wq保存更改并提交">
+<meta property="og:site_name" content="天朗映月Oo。.">
+<meta property="og:description" content="1. git init在本目录下创建git仓库   2. git add新建一个test.txt文件添加文件到缓存   3. git commit -v 提交更改文件，此时会打开vim，若不输入文本提交的话会出错 在test.txt文件输入 1111111，再次执行git add test.txt –&amp;gt; git commit -v  确认无误后用i输入文本，按ESC退出，输入:wq保存更改并">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-17T13:57:16.517Z">
+<meta property="og:image" content="http://leestonefly.github.io/Myblog/2018/12/17/git简单用法/gitinit.jpg">
+<meta property="og:image" content="http://leestonefly.github.io/Myblog/2018/12/17/git简单用法/gitadd.jpg">
+<meta property="og:image" content="http://leestonefly.github.io/Myblog/2018/12/17/git简单用法/commit.jpg">
+<meta property="og:image" content="http://leestonefly.github.io/Myblog/2018/12/17/git简单用法/add111.jpg">
+<meta property="og:image" content="http://leestonefly.github.io/Myblog/2018/12/17/git简单用法/addsuccess.jpg">
+<meta property="og:image" content="http://leestonefly.github.io/Myblog/2018/12/17/git简单用法/end.jpg">
+<meta property="og:updated_time" content="2018-12-17T14:28:44.895Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git简单用法">
-<meta name="twitter:description" content="1. git init在本目录下创建git仓库  2. git add添加文件到缓存  3. git commit -v提交更改文件并打开一个VIM编辑页面，确认无误后用i输入文本，按ESC退出后输入:wq保存更改并提交">
+<meta name="twitter:description" content="1. git init在本目录下创建git仓库   2. git add新建一个test.txt文件添加文件到缓存   3. git commit -v 提交更改文件，此时会打开vim，若不输入文本提交的话会出错 在test.txt文件输入 1111111，再次执行git add test.txt –&amp;gt; git commit -v  确认无误后用i输入文本，按ESC退出，输入:wq保存更改并">
+<meta name="twitter:image" content="http://leestonefly.github.io/Myblog/2018/12/17/git简单用法/gitinit.jpg">
   
-    <link rel="alternate" href="/Myblog/atom.xml" title="blogs" type="application/atom+xml">
+    <link rel="alternate" href="/Myblog/atom.xml" title="天朗映月Oo。." type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -39,7 +46,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/Myblog/" id="logo">blogs</a>
+        <a href="/Myblog/" id="logo">天朗映月Oo。.</a>
       </h1>
       
     </div>
@@ -88,16 +95,24 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="1-git-init"><a href="#1-git-init" class="headerlink" title="1. git init"></a>1. git init</h1><pre><code>在本目录下创建git仓库
-</code></pre><hr>
-<h1 id="2-git-add"><a href="#2-git-add" class="headerlink" title="2. git add"></a>2. git add</h1><pre><code>添加文件到缓存
-</code></pre><hr>
-<h1 id="3-git-commit-v"><a href="#3-git-commit-v" class="headerlink" title="3. git commit -v"></a>3. git commit -v</h1><pre><code>提交更改文件并打开一个VIM编辑页面，确认无误后用i输入文本，按ESC退出后输入:wq保存更改并提交
-</code></pre><hr>
+</code></pre><img src="/Myblog/2018/12/17/git简单用法/gitinit.jpg" title="[创建仓库]">
+<hr>
+<h1 id="2-git-add"><a href="#2-git-add" class="headerlink" title="2. git add"></a>2. git add</h1><pre><code>新建一个test.txt文件添加文件到缓存
+</code></pre><img src="/Myblog/2018/12/17/git简单用法/gitadd.jpg" title="[添加到缓存]">
+<hr>
+<h1 id="3-git-commit-v"><a href="#3-git-commit-v" class="headerlink" title="3. git commit -v"></a>3. git commit -v</h1><ul>
+<li>提交更改文件，此时会打开vim，若不输入文本提交的话会出错<img src="/Myblog/2018/12/17/git简单用法/commit.jpg" title="[提交文件]"></li>
+<li>在test.txt文件输入 1111111，再次执行git add test.txt –&gt; git commit -v <img src="/Myblog/2018/12/17/git简单用法/add111.jpg" title="[添加更改后提交]"></li>
+<li>确认无误后用i输入文本，按ESC退出，输入:wq保存更改并提交<img src="/Myblog/2018/12/17/git简单用法/addsuccess.jpg" title="[提交过程]"></li>
+<li>最终效果<img src="/Myblog/2018/12/17/git简单用法/end.jpg" title="[提交成功]">
+</li>
+</ul>
+<hr>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://leestonefly.github.io/Myblog/2018/12/17/git简单用法/" data-id="cjpsdxthu0002v0twlt25r7x1" class="article-share-link">Share</a>
+      <a data-url="http://leestonefly.github.io/Myblog/2018/12/17/git简单用法/" data-id="cjpsf0iqt000058tw3q93od48" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Myblog/tags/作业/">作业</a></li></ul>
