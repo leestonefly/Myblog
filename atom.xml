@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>黑椒牛柳研讨会</title>
+  
+  <subtitle>修飞机的程序猿</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://www.liyufei.xyz/"/>
+  <updated>2018-12-22T13:51:16.185Z</updated>
+  <id>http://www.liyufei.xyz/</id>
+  
+  <author>
+    <name>Lee stone</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTML</title>
+    <link href="http://www.liyufei.xyz/2018/12/21/HTML/"/>
+    <id>http://www.liyufei.xyz/2018/12/21/HTML/</id>
+    <published>2018-12-21T07:28:12.000Z</published>
+    <updated>2018-12-22T13:51:16.185Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="作业" scheme="http://www.liyufei.xyz/tags/%E4%BD%9C%E4%B8%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTTP</title>
+    <link href="http://www.liyufei.xyz/2018/12/20/HTTP/"/>
+    <id>http://www.liyufei.xyz/2018/12/20/HTTP/</id>
+    <published>2018-12-20T01:24:13.000Z</published>
+    <updated>2018-12-22T13:51:16.186Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;HTTP请求&quot;&gt;&lt;a href=&quot;#HTTP请求&quot; class=&quot;headerlink&quot; title=&quot;HTTP请求&quot;&gt;&lt;/a&gt;HTTP请求&lt;/h1&gt;&lt;p&gt;  请求报文是由请求方法、请求URI、协议版本、可选的请求首部字段和内容构成的。&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="作业" scheme="http://www.liyufei.xyz/tags/%E4%BD%9C%E4%B8%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://www.liyufei.xyz/2018/12/17/hello-world/"/>
+    <id>http://www.liyufei.xyz/2018/12/17/hello-world/</id>
+    <published>2018-12-17T12:35:21.328Z</published>
+    <updated>2018-12-17T12:35:21.328Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>git简单用法</title>
+    <link href="http://www.liyufei.xyz/2018/12/17/git%E7%AE%80%E5%8D%95%E7%94%A8%E6%B3%95/"/>
+    <id>http://www.liyufei.xyz/2018/12/17/git简单用法/</id>
+    <published>2018-12-17T06:56:34.000Z</published>
+    <updated>2018-12-17T14:31:30.755Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;1-git-init&quot;&gt;&lt;a href=&quot;#1-git-init&quot; class=&quot;headerlink&quot; title=&quot;1. git init&quot;&gt;&lt;/a&gt;1. git
+        
+      
+    
+    </summary>
+    
+    
+      <category term="作业" scheme="http://www.liyufei.xyz/tags/%E4%BD%9C%E4%B8%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>命令行</title>
+    <link href="http://www.liyufei.xyz/2018/12/17/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+    <id>http://www.liyufei.xyz/2018/12/17/命令行/</id>
+    <published>2018-12-17T03:22:25.000Z</published>
+    <updated>2018-12-17T14:08:29.770Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;1-ls&quot;&gt;&lt;a href=&quot;#1-ls&quot; class=&quot;headerlink&quot; title=&quot;1. ls&quot;&gt;&lt;/a&gt;1. ls&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;功能：
+    列出目标目录中所有的子目录和文件。
+    如果不指定 File 或
+        
+      
+    
+    </summary>
+    
+    
+      <category term="作业" scheme="http://www.liyufei.xyz/tags/%E4%BD%9C%E4%B8%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开博大吉</title>
+    <link href="http://www.liyufei.xyz/2018/12/17/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/"/>
+    <id>http://www.liyufei.xyz/2018/12/17/开博大吉/</id>
+    <published>2018-12-17T02:43:19.000Z</published>
+    <updated>2018-12-17T12:35:21.330Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;第一次写博客，为了设置翻车了好久，不过最终写出来了。&lt;/p&gt;
+&lt;p&gt;注：感谢王硕同学指点&lt;/p&gt;
+&lt;hr&gt;
+
+        
+      
+    
+    </summary>
+    
+    
+      <category term="test" scheme="http://www.liyufei.xyz/tags/test/"/>
+    
+  </entry>
+  
+</feed>
