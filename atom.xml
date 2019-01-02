@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.liyufei.xyz/"/>
-  <updated>2018-12-23T07:03:03.575Z</updated>
+  <updated>2019-01-02T14:48:31.374Z</updated>
   <id>http://www.liyufei.xyz/</id>
   
   <author>
@@ -17,21 +17,58 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CSS使用技巧</title>
+    <link href="http://www.liyufei.xyz/2019/01/02/CSS%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    <id>http://www.liyufei.xyz/2019/01/02/CSS使用技巧/</id>
+    <published>2019-01-02T12:38:29.000Z</published>
+    <updated>2019-01-02T14:48:31.374Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本篇文章主要介绍CSS技巧如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;左右布局&lt;/li&gt;
+&lt;li&gt;左中右布局&lt;/li&gt;
+&lt;li&gt;水平居中&lt;/li&gt;
+&lt;li&gt;垂直居中&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="作业" scheme="http://www.liyufei.xyz/tags/%E4%BD%9C%E4%B8%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Css</title>
+    <link href="http://www.liyufei.xyz/2018/12/28/Css/"/>
+    <id>http://www.liyufei.xyz/2018/12/28/Css/</id>
+    <published>2018-12-28T02:54:56.000Z</published>
+    <updated>2019-01-02T14:16:30.840Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;简单介绍了下Css内容&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="作业" scheme="http://www.liyufei.xyz/tags/%E4%BD%9C%E4%B8%9A/"/>
+    
+  </entry>
+  
+  <entry>
     <title>HTML</title>
     <link href="http://www.liyufei.xyz/2018/12/21/HTML/"/>
     <id>http://www.liyufei.xyz/2018/12/21/HTML/</id>
     <published>2018-12-21T07:28:12.000Z</published>
-    <updated>2018-12-23T07:03:03.575Z</updated>
+    <updated>2019-01-02T12:36:05.322Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;W3C简介&quot;&gt;&lt;a href=&quot;#W3C简介&quot; class=&quot;headerlink&quot; title=&quot;W3C简介&quot;&gt;&lt;/a&gt;W3C简介&lt;/h1&gt;&lt;p&gt;万维网联盟（World Wide Web
-        
-      
+      &lt;h1 id=&quot;W3C简介&quot;&gt;&lt;a href=&quot;#W3C简介&quot; class=&quot;headerlink&quot; title=&quot;W3C简介&quot;&gt;&lt;/a&gt;W3C简介&lt;/h1&gt;&lt;p&gt;万维网联盟（World Wide Web Consortium，W3C），又称W3C理事会，是万维网的主要国际标准组织。为半自治非政府组织（quasi-autonomous non-governmental organisation）。&lt;/p&gt;
+&lt;img src=&quot;/2018/12/21/HTML/W3C.jpg&quot; title=&quot;W3C&quot;&gt;
     
     </summary>
     
@@ -45,18 +82,23 @@
     <link href="http://www.liyufei.xyz/2018/12/20/HTTP/"/>
     <id>http://www.liyufei.xyz/2018/12/20/HTTP/</id>
     <published>2018-12-20T01:24:13.000Z</published>
-    <updated>2018-12-22T13:51:16.186Z</updated>
+    <updated>2019-01-02T12:36:05.323Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;HTTP请求&quot;&gt;&lt;a href=&quot;#HTTP请求&quot; class=&quot;headerlink&quot; title=&quot;HTTP请求&quot;&gt;&lt;/a&gt;HTTP请求&lt;/h1&gt;&lt;p&gt;  请求报文是由请求方法、请求URI、协议版本、可选的请求首部字段和内容构成的。&lt;/p&gt;
-&lt;h2
-        
-      
+      &lt;h1 id=&quot;HTTP请求&quot;&gt;&lt;a href=&quot;#HTTP请求&quot; class=&quot;headerlink&quot; title=&quot;HTTP请求&quot;&gt;&lt;/a&gt;HTTP请求&lt;/h1&gt;&lt;p&gt;  请求报文是由请求方法、请求URI、协议版本、可选的请求首部字段和内容构成的。&lt;/p&gt;
+&lt;h2 id=&quot;请求方法分类&quot;&gt;&lt;a href=&quot;#请求方法分类&quot; class=&quot;headerlink&quot; title=&quot;请求方法分类&quot;&gt;&lt;/a&gt;请求方法分类&lt;/h2&gt;&lt;h3 id=&quot;GET：获取资源&quot;&gt;&lt;a href=&quot;#GET：获取资源&quot; class=&quot;headerlink&quot; title=&quot;GET：获取资源&quot;&gt;&lt;/a&gt;GET：获取资源&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;&amp;gt; GET /index.html HTTP/1.1
+&amp;gt; Host: www.hackr.jp  
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;POST：传输实体主体&quot;&gt;&lt;a href=&quot;#POST：传输实体主体&quot; class=&quot;headerlink&quot; title=&quot;POST：传输实体主体&quot;&gt;&lt;/a&gt;POST：传输实体主体&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;&amp;gt; POST /submit.cgi HTTP/1.1
+&amp;gt; Host: www.hackr.jp
+&amp;gt; Content-Length: 1560(1560字节数据)
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;PUT：传输文件&quot;&gt;&lt;a href=&quot;#PUT：传输文件&quot; class=&quot;headerlink&quot; title=&quot;PUT：传输文件&quot;&gt;&lt;/a&gt;PUT：传输文件&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;&amp;gt; PUT /example.html HTTP/1.1
+&amp;gt; Host: www.hackr.jp
+&amp;gt; Content-Tpye: text/html
+&amp;gt; Content-Length: 1560(1560字节数据)
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;HEAD：获取报文首部&quot;&gt;&lt;a href=&quot;#HEAD：获取报文首部&quot; class=&quot;headerlink&quot; title=&quot;HEAD：获取报文首部&quot;&gt;&lt;/a&gt;HEAD：获取报文首部&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;&amp;gt; HEAD /index.html HTTP/1.1
+&amp;gt; Host: www.hackr.jp 
+&lt;/code&gt;&lt;/pre&gt;
     
     </summary>
     
@@ -70,17 +112,13 @@
     <link href="http://www.liyufei.xyz/2018/12/17/hello-world/"/>
     <id>http://www.liyufei.xyz/2018/12/17/hello-world/</id>
     <published>2018-12-17T12:35:21.328Z</published>
-    <updated>2018-12-17T12:35:21.328Z</updated>
+    <updated>2019-01-02T12:36:05.325Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
-      
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Writing&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
@@ -92,17 +130,13 @@
     <link href="http://www.liyufei.xyz/2018/12/17/git%E7%AE%80%E5%8D%95%E7%94%A8%E6%B3%95/"/>
     <id>http://www.liyufei.xyz/2018/12/17/git简单用法/</id>
     <published>2018-12-17T06:56:34.000Z</published>
-    <updated>2018-12-17T14:31:30.755Z</updated>
+    <updated>2019-01-02T12:36:05.324Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;1-git-init&quot;&gt;&lt;a href=&quot;#1-git-init&quot; class=&quot;headerlink&quot; title=&quot;1. git init&quot;&gt;&lt;/a&gt;1. git
-        
-      
+      &lt;h1 id=&quot;1-git-init&quot;&gt;&lt;a href=&quot;#1-git-init&quot; class=&quot;headerlink&quot; title=&quot;1. git init&quot;&gt;&lt;/a&gt;1. git init&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;在本目录下创建git仓库
+&lt;/code&gt;&lt;/pre&gt;&lt;img src=&quot;/2018/12/17/git简单用法/gitinit.jpg&quot; title=&quot;[创建仓库]&quot;&gt;
+&lt;hr&gt;
     
     </summary>
     
@@ -116,51 +150,58 @@
     <link href="http://www.liyufei.xyz/2018/12/17/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
     <id>http://www.liyufei.xyz/2018/12/17/命令行/</id>
     <published>2018-12-17T03:22:25.000Z</published>
-    <updated>2018-12-17T14:08:29.770Z</updated>
+    <updated>2019-01-02T12:36:05.326Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;1-ls&quot;&gt;&lt;a href=&quot;#1-ls&quot; class=&quot;headerlink&quot; title=&quot;1. ls&quot;&gt;&lt;/a&gt;1. ls&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;功能：
+      &lt;h1 id=&quot;1-ls&quot;&gt;&lt;a href=&quot;#1-ls&quot; class=&quot;headerlink&quot; title=&quot;1. ls&quot;&gt;&lt;/a&gt;1. ls&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;功能：
     列出目标目录中所有的子目录和文件。
-    如果不指定 File 或
-        
-      
+    如果不指定 File 或 Directory 参数， ls 命令显示当前目录的内容。
+参数：
+    -a 列出目录下的一切文件，包含以 . 最初的隐含文件。//常用 　
+    -m 横向输出文件名，并以“，”作分格符。
+    -c 输出文件的 i 节点的修正时刻，并以此排序。
+    -R 列出一切子目录下的文件。
+    -l 列出文件的具体信息。
+    -s 在每个文件名后输出该文件的大小。
+    -k 以 k 字节的方式表明文件的大小。
+    -i 输出文件的 i 节点的索引信息。
+    -l |grep ^d 只显现目录 
+    -l |grep ^[^d] 只显现非目录文件        
+    -lv 按数字排序
+    -t 以时刻排序。
+    -r 对目录反向排序
+    -f -U 对输出的文件不排序。
+    -X 以文件的扩展名(最终一个 . 后的字符)排序。
+    -S 以文件大小排序。
+    -u 以文件前次被拜访的时刻排序。　
+    -n 用数字的 UID,GID 替代称号。
+    -o 显现文件的除组信息外的具体信息。
+    -p -F 在每个文件名后附上一个字符以阐明该文件的类型，“*”表明可执行的一般文件；“/”表明目录；“@”表明符号连接；“|”表明FIFOs；“=”表明套接字(sockets)
+    -q 用?替代不行输出的字符。　
+    -x 按列输出，横向排序。
+暂时无用选项：
+    -b 把文件名中不可输出的字符用反斜杠加字符编号(就象在C言语里相同)的方式列出。//不常用
+    -d 将目录象文件相同显现，而不是显现其下的文件。
+    -e 输出时刻的悉数信息，而不是输出简略信息。 //没用
+    -g 无用。
+    -A 显现除 “.”和“..”外的一切文件。
+    -B 不输出以 “~”结束的备份文件。
+    -C 按列输出，纵向排序。
+    -G 输出文件的组的信息。
+    -L 列出连接文件名而不是连接到的文件。
+    -N 不约束文件长度。
+    -Q 把输出的文件名用双引号括起来。　
+    -1 一行只输出一个文件。
+    --color=no 不显现五颜六色文件名
+    --help 在规范输出上显现协助信息。
+    --version 在规范输出上输出版别信息并退出
+&lt;/code&gt;&lt;/pre&gt;
     
     </summary>
     
     
       <category term="作业" scheme="http://www.liyufei.xyz/tags/%E4%BD%9C%E4%B8%9A/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>开博大吉</title>
-    <link href="http://www.liyufei.xyz/2018/12/17/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/"/>
-    <id>http://www.liyufei.xyz/2018/12/17/开博大吉/</id>
-    <published>2018-12-17T02:43:19.000Z</published>
-    <updated>2018-12-17T12:35:21.330Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;第一次写博客，为了设置翻车了好久，不过最终写出来了。&lt;/p&gt;
-&lt;p&gt;注：感谢王硕同学指点&lt;/p&gt;
-&lt;hr&gt;
-
-        
-      
-    
-    </summary>
-    
-    
-      <category term="test" scheme="http://www.liyufei.xyz/tags/test/"/>
     
   </entry>
   

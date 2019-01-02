@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.6.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.6.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.6.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '6.6.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="本篇文章主要介绍CSS技巧如下：  左右布局 左中右布局 水平居中 垂直居中">
+<meta name="keywords" content="作业">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS使用技巧">
+<meta property="og:url" content="http://www.liyufei.xyz/2019/01/02/CSS使用技巧/index.html">
+<meta property="og:site_name" content="黑椒牛柳研讨会">
+<meta property="og:description" content="本篇文章主要介绍CSS技巧如下：  左右布局 左中右布局 水平居中 垂直居中">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://www.liyufei.xyz/2019/01/02/CSS使用技巧/bg2015071004.png">
+<meta property="og:image" content="http://www.liyufei.xyz/2019/01/02/CSS使用技巧/bg2015071005.png">
+<meta property="og:image" content="http://www.liyufei.xyz/2019/01/02/CSS使用技巧/bg2015071010.png">
+<meta property="og:image" content="http://www.liyufei.xyz/2019/01/02/CSS使用技巧/bg2015071011.png">
+<meta property="og:updated_time" content="2019-01-02T14:48:31.374Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS使用技巧">
+<meta name="twitter:description" content="本篇文章主要介绍CSS技巧如下：  左右布局 左中右布局 水平居中 垂直居中">
+<meta name="twitter:image" content="http://www.liyufei.xyz/2019/01/02/CSS使用技巧/bg2015071004.png">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="黑椒牛柳研讨会" type="application/atom+xml">
+
+
+
+
+  <link rel="canonical" href="http://www.liyufei.xyz/2019/01/02/CSS使用技巧/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>CSS使用技巧 | 黑椒牛柳研讨会</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion .logo-line-before i { left: initial; }
+    .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">黑椒牛柳研讨会</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">修飞机的程序猿</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.liyufei.xyz/2019/01/02/CSS使用技巧/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lee stone">
+      <meta itemprop="description" content="学习记录博客">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黑椒牛柳研讨会">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">CSS使用技巧
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-02 20:38:29 / 修改时间：22:48:31" itemprop="dateCreated datePublished" datetime="2019-01-02T20:38:29+08:00">2019-01-02</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>本篇文章主要介绍CSS技巧如下：</p>
+<ul>
+<li>左右布局</li>
+<li>左中右布局</li>
+<li>水平居中</li>
+<li>垂直居中</li>
+</ul>
+<a id="more"></a>
+<hr>
+<h1 id="左右布局"><a href="#左右布局" class="headerlink" title="左右布局"></a>左右布局</h1><h2 id="float实现"><a href="#float实现" class="headerlink" title="float实现"></a>float实现</h2><p>float属性是css中关于布局的一个关键属性，其意为将该块状区域脱离父级标签的文档流，left属性值使该区域向父级标签区域的左侧边界放置，right属性值使该区域块向父级标签的右侧边界放置，如是利用该属性可以实现左右布局。 float属性属于布局属性，其中有着很多重要应用。</p>
+<blockquote>
+<p>float属性的三个特性为：</p>
+<ol>
+<li>包裹性：可以按照区域块中子元素的实际宽度进行包裹；</li>
+<li>破坏性：float区域块不会被父级区域块包裹，造成前端常见的高度塌陷问题，解决办法是清除浮动；</li>
+<li>占位性（个人称呼），浮动区域块虽然是脱离了父级区域，但是它是要占用一定的正常流区域的，即如果不清除浮动，我们会看到它会占用它后面的同级元素（如果没有会占用它父级后面的同级元素，如果还是没有则向上追溯）的区域，影响同级元素，所以常见清浮动。</li>
+</ol>
+</blockquote>
+<p>实现代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">.clearfix::after &#123;</span><br><span class="line">	content: &apos;&apos;;</span><br><span class="line">	display: block;</span><br><span class="line">	clear: both;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.wrap&#123;</span><br><span class="line">    float:left;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br><span class="line">----------------------------------------------</span><br><span class="line">&lt;section class=&quot;section clearfix&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;wrap&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;col-4 c1&quot;&gt;1&lt;/div&gt;</span><br><span class="line">        &lt;div class=&quot;col-4 c2&quot;&gt;2&lt;/div&gt;</span><br><span class="line">        &lt;div class=&quot;col-4 c3&quot;&gt;3&lt;/div&gt;</span><br><span class="line">        &lt;div class=&quot;col-4 c4&quot;&gt;4&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;wrap&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;col-4 c5&quot;&gt;5&lt;/div&gt;</span><br><span class="line">        &lt;div class=&quot;col-4 c6&quot;&gt;6&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/section&gt;</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>代码说明：<br>利用float可以实现<code>1234</code>和<code>56</code>横向排列</p>
+</blockquote>
+<hr>
+<h1 id="左中右布局"><a href="#左中右布局" class="headerlink" title="左中右布局"></a>左中右布局</h1><h2 id="float-实现"><a href="#float-实现" class="headerlink" title="float 实现"></a>float 实现</h2><p>次布局依旧可以使用上节方法，不过需要调整每个元素中间的间隔实现代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">.clearfix::after &#123;</span><br><span class="line">	content: &apos;&apos;;</span><br><span class="line">	display: block;</span><br><span class="line">	clear: both;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.wrap&#123;</span><br><span class="line">    float:left;</span><br><span class="line">    margin-left：50px；</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br><span class="line">----------------------------------------------</span><br><span class="line">&lt;section class=&quot;section clearfix&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;wrap&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;col-4 c1&quot;&gt;1&lt;/div&gt;</span><br><span class="line">        &lt;div class=&quot;col-4 c2&quot;&gt;2&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;wrap&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;col-4 c3&quot;&gt;3&lt;/div&gt;</span><br><span class="line">        &lt;div class=&quot;col-4 c4&quot;&gt;4&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;wrap&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;col-4 c5&quot;&gt;5&lt;/div&gt;</span><br><span class="line">        &lt;div class=&quot;col-4 c6&quot;&gt;6&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/section&gt;</span><br></pre></td></tr></table></figure></p>
+<hr>
+<h1 id="水平居中"><a href="#水平居中" class="headerlink" title="水平居中"></a>水平居中</h1><p>水平居中对于不同类型的元素使用的方法也不一样</p>
+<h2 id="行内元素"><a href="#行内元素" class="headerlink" title="行内元素"></a>行内元素</h2><p>行内元素（主要是表现为文字，图片等行内元素），通过在父级元素设置 text-align:center 使子级行内元素居中。</p>
+<h2 id="定宽块级元素"><a href="#定宽块级元素" class="headerlink" title="定宽块级元素"></a>定宽块级元素</h2><p>浮动块级元素，随后定宽，中间的元素会居中。定宽块级元素设置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">margin-left:auto;</span><br><span class="line">margin-right:auto;</span><br></pre></td></tr></table></figure></p>
+<h2 id="不定宽块级元素"><a href="#不定宽块级元素" class="headerlink" title="不定宽块级元素"></a>不定宽块级元素</h2><ol>
+<li><p>加入 table 标签</p>
+<blockquote>
+<p>将元素用 table 标签包裹起来，包括 tbody、tr、td，但这种方法为了居中增加了无语义的标签。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">table&#123;</span><br><span class="line">    margin:0 auto;</span><br><span class="line">&#125;</span><br><span class="line">ul&#123;</span><br><span class="line">    list-style:none;</span><br><span class="line">    margin:0;</span><br><span class="line">    padding:0;</span><br><span class="line">&#125;</span><br><span class="line">li&#123;</span><br><span class="line">    float:left;</span><br><span class="line">    margin-right:8px;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">----------------------------------------------</span><br><span class="line">&lt;div&gt;</span><br><span class="line">  &lt;table&gt;</span><br><span class="line">    &lt;tbody&gt;</span><br><span class="line">      &lt;tr&gt;</span><br><span class="line">        &lt;td&gt;</span><br><span class="line">           &lt;ul&gt;</span><br><span class="line">              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;我是要&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;居中的&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;ul标签&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">           &lt;/ul&gt;</span><br><span class="line">        &lt;/td&gt;</span><br><span class="line">      &lt;/tr&gt;</span><br><span class="line">    &lt;/tbody&gt;</span><br><span class="line">  &lt;/table&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+</li>
+<li><p>设置 display:inline 方法</p>
+<blockquote>
+<p>设置为 inline 行内元素后沿用行内元素居中的方法，这种方法改变了元素的 display 样式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line">div&#123;</span><br><span class="line">    text-align:center;</span><br><span class="line">&#125;</span><br><span class="line">ul&#123;</span><br><span class="line">    list-style:none;</span><br><span class="line">    margin:0;</span><br><span class="line">    padding:0;</span><br><span class="line">    display:inline;</span><br><span class="line">&#125;</span><br><span class="line">li&#123;</span><br><span class="line">    display:inline;</span><br><span class="line">    margin-right:8px;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">----------------------------------------------</span><br><span class="line">&lt;div&gt;</span><br><span class="line">    &lt;ul&gt;</span><br><span class="line">       &lt;li&gt;&lt;a href=&quot;#&quot;&gt;我是要&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">       &lt;li&gt;&lt;a href=&quot;#&quot;&gt;居中的&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">       &lt;li&gt;&lt;a href=&quot;#&quot;&gt;ul标签&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">  &lt;/ul&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+</li>
+</ol>
+<hr>
+<h1 id="垂直居中"><a href="#垂直居中" class="headerlink" title="垂直居中"></a>垂直居中</h1><h2 id="通过line-height实现"><a href="#通过line-height实现" class="headerlink" title="通过line-height实现"></a>通过line-height实现</h2><blockquote>
+<p>设置子元素的line-height值等于父元素的height，这种方法适用于子元素为行内元素的情况。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">#out&#123;</span><br><span class="line">    height:300px</span><br><span class="line">&#125;</span><br><span class="line">#in&#123;</span><br><span class="line">    height:50%;</span><br><span class="line">    line-height:300px</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">----------------------------------------------</span><br><span class="line">&lt;div id=&quot;out&quot;&gt;</span><br><span class="line">    &lt;p id=&quot;in&quot;&gt;CSS垂直&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="重点：flex！！！"><a href="#重点：flex！！！" class="headerlink" title="重点：flex！！！"></a>重点：flex！！！</h1><p>布局的传统解决方案，基于盒状模型，依赖 display 属性 + position属性 + float属性。它对于那些特殊布局非常不方便，比如，垂直居中就不容易实现。</p>
+<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>Flex 是 Flexible Box 的缩写，意为”弹性布局”，用来为盒状模型提供最大的灵活性。</p>
+<p>任何一个容器都可以指定为 Flex 布局。<br><img src="/2019/01/02/CSS使用技巧/bg2015071004.png" title="flexitem"><br>容器默认存在两根轴：水平的主轴（main axis）和垂直的交叉轴（cross axis）。主轴的开始位置（与边框的交叉点）叫做main start，结束位置叫做main end；交叉轴的开始位置叫做cross start，结束位置叫做cross end。</p>
+<p>项目默认沿主轴排列。单个项目占据的主轴空间叫做main size，占据的交叉轴空间叫做cross size。</p>
+<h2 id="容器的属性"><a href="#容器的属性" class="headerlink" title="容器的属性"></a>容器的属性</h2><ul>
+<li><code>flex-flow</code>属性是<code>flex-direction</code>属性和<code>flex-wrap</code>属性的简写形式，默认值为<code>row nowrap</code><blockquote>
+<p>此属性前半部分决定水平排列还是垂直列，后半部分决定是否换行</p>
+</blockquote>
+</li>
+</ul>
+<img src="/2019/01/02/CSS使用技巧/bg2015071005.png" title="flex-flow">
+<pre><code>row（默认值）：主轴为水平方向，起点在左端。
+row-reverse：主轴为水平方向，起点在右端。
+column：主轴为垂直方向，起点在上沿。
+column-reverse：主轴为垂直方向，起点在下沿
+</code></pre><ul>
+<li><code>justify-content</code>属性定义了项目在主轴上的对齐方式。<blockquote>
+<p>实现水平居中</p>
+</blockquote>
+</li>
+</ul>
+<img src="/2019/01/02/CSS使用技巧/bg2015071010.png" title="flexitem">
+<pre><code>flex-start（默认值）：左对齐
+flex-end：右对齐
+center： 居中
+space-between：两端对齐，项目之间的间隔都相等。
+space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。
+</code></pre><ul>
+<li><code>align-items</code>属性定义项目在交叉轴上如何对齐。<blockquote>
+<p>实现垂直居中</p>
+</blockquote>
+</li>
+</ul>
+<img src="/2019/01/02/CSS使用技巧/bg2015071011.png" title="flexitem">
+<pre><code>flex-start：交叉轴的起点对齐。
+flex-end：交叉轴的终点对齐。
+center：交叉轴的中点对齐。
+baseline: 项目的第一行文字的基线对齐。
+stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。
+</code></pre><p>更多应用和详细写法请看阮一峰博客：<a href="http://www.ruanyifeng.com/blog/2015/07/flex-examples.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2015/07/flex-examples.html</a></p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/作业/" rel="tag"># 作业</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/12/28/Css/" rel="next" title="Css">
+                <i class="fa fa-chevron-left"></i> Css
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="Lee stone">
+            
+              <p class="site-author-name" itemprop="name">Lee stone</p>
+              <p class="site-description motion-element" itemprop="description">学习记录博客</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/leestonefly" title="GitHub &rarr; https://github.com/leestonefly" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:787441351@qq.com" title="E-Mail &rarr; mailto:787441351@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#左右布局"><span class="nav-number">1.</span> <span class="nav-text">左右布局</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#float实现"><span class="nav-number">1.1.</span> <span class="nav-text">float实现</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#左中右布局"><span class="nav-number">2.</span> <span class="nav-text">左中右布局</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#float-实现"><span class="nav-number">2.1.</span> <span class="nav-text">float 实现</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#水平居中"><span class="nav-number">3.</span> <span class="nav-text">水平居中</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#行内元素"><span class="nav-number">3.1.</span> <span class="nav-text">行内元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定宽块级元素"><span class="nav-number">3.2.</span> <span class="nav-text">定宽块级元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不定宽块级元素"><span class="nav-number">3.3.</span> <span class="nav-text">不定宽块级元素</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#垂直居中"><span class="nav-number">4.</span> <span class="nav-text">垂直居中</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#通过line-height实现"><span class="nav-number">4.1.</span> <span class="nav-text">通过line-height实现</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#重点：flex！！！"><span class="nav-number">5.</span> <span class="nav-text">重点：flex！！！</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本概念"><span class="nav-number">5.1.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#容器的属性"><span class="nav-number">5.2.</span> <span class="nav-text">容器的属性</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Lee stone</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v6.6.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=6.6.0"></script>
+
+  <script src="/js/src/motion.js?v=6.6.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=6.6.0"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=6.6.0"></script>
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=6.6.0"></script>
+<script src="/js/src/post-details.js?v=6.6.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=6.6.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
